@@ -41,6 +41,7 @@
     }
 }
 
+
 .adContainer {
     width: 600px;
     margin: auto;
@@ -48,6 +49,11 @@
 }
 .container-web {
     width: 100%;
+    
+}
+.margin {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .logo img {
