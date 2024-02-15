@@ -1,0 +1,81 @@
+@import '../variables.css';
+
+.add-post-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    .add-post-form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+            .label-input-wrapper {
+                display: flex;
+                flex-direction: column;
+            }
+            .addPostButton {
+                margin: auto;
+                padding: 4px 20px;
+                color: var(--text-color-white);
+                background-color: var(--secondary-color);
+                border: none;
+            }
+    }
+    .statusMessage {
+        font-size: 20px;
+        margin: auto;
+        color: var(--secondary-color);
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .right-side-layout {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 900px) {
+    .menu ul a  {
+        display: none;
+    }
+    .menu-bar .menu .burger-btn .burger {
+        display: inline-block;
+        cursor: pointer;
+    }
+    .adContainer {
+       display: none;
+    }
+    .mobile-menu {
+        display: inline-block;
+    }
+    .logo img {
+        width: 100px;
+    }
+    .footer .footer-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .menu-bar .add-btn a {
+        font-size: 14px;
+    }
+    
+}
+@media screen and (max-width: 576px) {
+    .main-body .left-side-layout {
+        width: 100%;
+    }
+    .add-post-wrapper {
+        padding: 10px;
+    }
+    .mobile-menu {
+        width: 100%;
+        margin: 0;
+    }
+    .menu-bar .add-btn a {
+        font-size: 12px;
+    }
+    .footer {
+        font-size: 12px;
+    }
+        
+}
