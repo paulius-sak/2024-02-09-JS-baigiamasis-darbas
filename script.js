@@ -7,7 +7,6 @@ const fetchPosts = async () => {
     const response = await fetch("https://65c603d9e5b94dfca2e0c57d.mockapi.io/posts")
 
     const posts = await response.json()
-    console.log(posts)
 
     const postsSorted = posts.sort((a, b) => parseFloat(a.price) - parseFloat(b.price))
 
@@ -38,6 +37,7 @@ const fetchPosts = async () => {
         card.append(contentBlock)
         contentBlock.append(title, price)
         wrapper.append(card)
+        
     })
 }
 

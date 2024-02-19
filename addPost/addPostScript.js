@@ -33,7 +33,6 @@ addPostButton.addEventListener("click", async (event) => {
           description: newPostDescription.value,
           location: newPostCity.value,
       }
-      console.log(postData)
   
   
       const response = await fetch("https://65c603d9e5b94dfca2e0c57d.mockapi.io/posts", {
