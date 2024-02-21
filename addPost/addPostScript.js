@@ -10,6 +10,7 @@ const newPostCity = document.getElementById("postCity")
 
 const burgerButton = document.getElementById("burger-btn")
 const mobileMenu = document.getElementById("mobile-menu")
+const closeButton = document.getElementById("close-btn")
 
 addPostButton.addEventListener("click", async (event) => {
     event.preventDefault()
@@ -59,4 +60,8 @@ addPostButton.addEventListener("click", async (event) => {
 burgerButton.addEventListener("click", () => {
     mobileMenu.classList.toggle("active")
 })
+
+closeButton.addEventListener('click', function() {
+    document.querySelector('.mobile-menu').classList.remove('active');
+});
 
